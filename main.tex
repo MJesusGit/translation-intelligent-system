@@ -75,7 +75,8 @@
  \\ \texttt{MJesus.duenas1@alu.uclm.es}\\[2ex]%
 %	\today
 }
-
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
 \begin{document}
 	\maketitle
 	\newpage
@@ -101,7 +102,24 @@
 	\section{First aproaches}
 	\label{sec:examples}
 	\begin{flushleft}
-	De toda la vida se han llevado acabo traducciones.A dia de hoy la traduccion automatica ya no es una fantasaia de ciencia ficcinon, lleva años en continuo desarrollo,sin embargo, los matices de una lengua son dificiles y e spor esto que solo se ha desarrollado hasta cierto punto
+	Today, machine translation is no longer a science fiction fantasy, it has been in continuous development for years, but the nuances of a language are difficult and that is why it has only been developed to a certain extent.\par
+	
+	In the early years around 1949, Warren Weaver, of the Rockefeller Foundation, set up a cryptography and language processing machine that was a precursor to the concept of machine translation. This project can be found in his "Memorandum on Translation".\par
+
+    In 1954 the founding research team of the Georgetown-IBM experiment carried out a demonstration of a machine that could translate 250 words from Russian into English.\par
+    
+    With this advance, people thought that machine translation would soon solve many problems and many translators began to fear for their jobs. However, the human brain is better able than a computer to access the complex framework of meaning, interpretation and syntax. In 1964, the Advisory Committee for Automatic Language Processing (ALPAC) declared that further investment in machine translation was no longer worthwhile.\par
+
+    During the 1970s and 1990s Canada did not think like ALPAC, it developed the METEO system, which translated meteorological reports from English into French, capable of translating 80,000 words a day and was such a success that it was used until the first half of the 21st century.\par\par\par
+    
+    In addition, machine translation was used by the French textile industry institute to convert French summaries into English, German and Spanish. Around the same time, Xerox created its own system for translating technical manuals. At that time, machine translation was only used for the translation of technical documents.\par\par
+
+    The 1980s saw the development of translation memory technology, which was the beginning of overcoming the challenge posed by the nuances of verbal communication, but the systems continued to face the same challenges in trying to convert a text into another language without losing its meaning.\par
+    
+    t was in 2000 when Franz JOsefOch, a computer scientist, won the machine translation contest that he became Google's Director of Translation Development. In 2012, Google announced its own translation application, Google translate. In addition, Japan is also leading the machine translation revolution with the creation of voice translation for mobile phones, which works in English, Japanese and Chinese. This is the result of the development of computer systems with a neural network model, rather than memory-based functions.\par
+    
+    That is why in 2016, Google informed the public that the application of a neural network technology improved the clarity of its translator, eliminating many of its errors. Called Google Neural Machine Translation (NMT), it began to translate language combinations that it had not been taught, for example, the programmers taught it to translate from English to Portuguese and Spanish, and it began to translate from Portuguese to Spanish without assigning it that combination.\par
+
 	\end{flushleft}
 	
 	
@@ -110,6 +128,15 @@
 	
     \section{Main milestones}
 	\label{sec:examples}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\section{Current status}
 	\label{sec:examples}
 	\section{Future challenges}
@@ -123,12 +150,13 @@
 	%\section{}{Acknowledgements} \lipsum[6]
 	
 %	\newpage
-	\bibliography{refs}
-	
-	\appendix
-	
-	
-	
-	\lipsum[7]
+    \usepackage{biblatex}
+    \section{Bibliography}
+    @online{knuthwebsite,
+    author    = "Hello yuqo",
+    title     = "Nacimiento e historia de la traduccion automatica",
+    url       = "https://www.yuqo.es/nacimiento-e-historia-de-la-traduccion-automatica/",
+    keywords  = "latex,knuth"
+}
 	
 \end{document}
