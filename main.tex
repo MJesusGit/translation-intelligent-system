@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
 
-\usepackage[pages=all, color=black, position={current page.south}, placement=bottom, scale=1, opacity=1, vshift=5mm]{background}
+\usepackage[pages=all, color=black, position={current page.south}, placement=bottom, scale=1, opacity=1, vshift=3mm]{background}
 \SetBgContents{
 
 }      % copyright
@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
+\usepackage{graphicx}
 
 % Unicode
 \usepackage[utf8]{inputenc}
@@ -64,35 +65,52 @@
 \usepackage{mathrsfs} % for \mathscr command
 
 \usepackage{lipsum}
-
 % Author info
-\pagebreak
-\title{Translation}
-\author{María Jesús Dueñas Recuero}
 
-\date{
 
- \\ \texttt{MJesus.duenas1@alu.uclm.es}\\[2ex]%
-%	\today
-}
-\setlength{\parindent}{4em}
-\setlength{\parskip}{1em}
+
+
+
 \begin{document}
-	\maketitle
+\begin{titlepage}
+    \centering
+    {\bfseries\LARGE Universidad castilla la mancha\par}
+    \vspace{1cm}
+    {\scshape\Large Escuela superior informática\par}
+    \vspace{2cm}
+    {\scshape\Huge Translation \par}
+    \vspace{2cm}
+    {\itshape\Large Intelligent Systems \par}
+    \vfill
+    {\Large Autor: \par}
+    {\Large María Jesús Dueñas Recuero\par}
+    \vfill
+    {\Large November 2021 \par}
+    
+   
+\end{titlepage}
+\begin{abstract}
+    Given the increase in globalisation, every day we are in contact with a greater number of cultures, which forces us, in a healthy way, to learn new languages.\par
+
+	However, thanks to the development of technology and artificial intelligence, it is not necessarily necessary to study a language for years in order to understand it, given that translator websites and the translators themselves allow us to interact with it fluently.\par
+
+	It is an opportunity to broaden our knowledge and understanding of other languages. As well as guaranteeing the correct use of the language for work and business, as they not only translate a language but also interpret emotions and feelings.
+\end{abstract}
+
 	\newpage
-	\
+	
 	\tableofcontents
 	\newpage
 	\section{Introduction}
 	\label{sec:intro}
-	\begin{flushleft}
-	Given the increase in globalisation, every day we are in contact with a greater number of cultures, which forces us, in a healthy way, to learn new languages.
+	Artificial intelligence (AI) technology is changing the way people go about their daily lives, not only enabling them to read in their native language, but also to read in different languages and understand them perfectly, and even to be aware of the sentimentality of the text thanks to machine translation.\par
 
-	However, thanks to the development of technology and artificial intelligence, it is not necessarily necessary to study a language for years in order to understand it, given that translator websites and the translators themselves allow us to interact with it fluently.
+    Professionals are aware of the importance of AI in the development of machine translation, however, there are still many barriers in this field as will be seen throughout the paper.
 
-	It is an opportunity to broaden our knowledge and understanding of other languages. As well as guaranteeing the correct use of the language for work and business, as they not only translate a language but also interpret emotions and feelings.
+
 	
-    \end{flushleft}
+	
+    
 	
 	
 
@@ -101,26 +119,20 @@
 	
 	\section{First aproaches}
 	\label{sec:examples}
-	\begin{flushleft}
-	Today, machine translation is no longer a science fiction fantasy, it has been in continuous development for years, but the nuances of a language are difficult and that is why it has only been developed to a certain extent.\par
+Today, machine translation is no longer a science fiction fantasy, it has been in continuous development for years, but the nuances of a language are difficult and that is why it has only been developed to a certain extent.
 	
-	In the early years around 1949, \textbf{Warren Weaver}, of the Rockefeller Foundation, set up a cryptography and language processing machine that was a precursor to the concept of machine translation. This project can be found in his \textbf{"Memorandum on Translation"} .\par
+In the early years around 1949, \textbf{Warren Weaver}, of the Rockefeller Foundation, set up a cryptography and language processing machine that was a precursor to the concept of machine translation. This project can be found in his \textbf{«Memorandum on Translation»} .
+In 1954 the founding research team of the Georgetown-IBM experiment carried out a demonstration of a machine that could translate 250 words from Russian into English.
 
-    In 1954 the founding research team of the Georgetown-IBM experiment carried out a demonstration of a machine that could translate 250 words from Russian into English.\par
-    
-    With this advance, people thought that machine translation would soon solve many problems and many translators began to fear for their jobs. However, the human brain is better able than a computer to access the complex framework of meaning, interpretation and syntax. In 1964, the Advisory Committee for Automatic Language Processing (ALPAC) declared that further investment in machine translation was no longer worthwhile.\par
+In addition, machine translation was used by the French textile industry institute to convert French summaries into English, German and Spanish. Around the same time, Xerox created its own system for translating technical manuals. At that time, machine translation was only used for the translation of technical documents.
 
-    During the 1970s and 1990s Canada did not think like ALPAC, it developed the METEO system, which translated meteorological reports from English into French, capable of translating 80,000 words a day and was such a success that it was used until the first half of the 21st century.\par\par\par
-    
-    In addition, machine translation was used by the French textile industry institute to convert French summaries into English, German and Spanish. Around the same time, Xerox created its own system for translating technical manuals. At that time, machine translation was only used for the translation of technical documents.\par\par
+The 1980s saw the development of translation memory technology, which was the beginning of overcoming the challenge posed by the nuances of verbal communication, but the systems continued to face the same challenges in trying to convert a text into another language without losing its meaning.
 
-    The 1980s saw the development of translation memory technology, which was the beginning of overcoming the challenge posed by the nuances of verbal communication, but the systems continued to face the same challenges in trying to convert a text into another language without losing its meaning.\par
-    
-    t was in 2000 when Franz JOsefOch, a computer scientist, won the machine translation contest that he became Google's Director of Translation Development. In 2012, Google announced its own translation application, Google translate. In addition, Japan is also leading the machine translation revolution with the creation of voice translation for mobile phones, which works in English, Japanese and Chinese. This is the result of the development of computer systems with a neural network model, rather than memory-based functions.\par
-    
-    That is why in 2016, Google informed the public that the application of a neural network technology improved the clarity of its translator, eliminating many of its errors. Called Google Neural Machine Translation (NMT), it began to translate language combinations that it had not been taught, for example, the programmers taught it to translate from English to Portuguese and Spanish, and it began to translate from Portuguese to Spanish without assigning it that combination.\par
+That is why in 2016, Google informed the public that the application of a neural network technology improved the clarity of its translator, eliminating many of its errors. Called Google Neural Machine Translation , it began to translate language combinations that it had not been taught, for example, the programmers taught it to translate from English to Portuguese and Spanish, and it began to translate from Portuguese to Spanish without assigning it that combination.
 
-	\end{flushleft}
+In 2017, machine translation took another technological leap forward with the advent of neural machine translation .
+
+
 	
 	
 	
@@ -128,45 +140,82 @@
 	
     \section{Main milestones}
 	\label{sec:examples}
-	
-	
-	
-	\subsection{European Association for Machine Translation (EAMT)}
-	\begin{flushleft}
-	The European Association for Machine Translation is made up of people interested in machine translation and translation software and includes users, developers and researchers, organises an annual congress at the European level, and every two years a joint congress with the IAMT, maintains a mailing list (mt-list@eamt.org) for the discussion of translation technology issues, and provides information on machine translation groups and research projects, and on events related to machine translation. On its website it provides information on research groups and projects and on events related to machine translation, and offers its members a free compendium of translation software, compiled by John Hutchins and updated annually.
-	\end{flushleft}
+	Machine translation is a major research topic in the academic world, and several research groups are exploring various strategies, from those based on interlanguage (EU Molto Project) to transfer rule-based systems such as Apertium, to purely statistical systems such as Moses.
 
+    In research, they try to establish links between translators and machine translation. These include those aimed at assessing the quality of machine translation and its impact on the productivity of professional translators.
 
-	\subsection{Asia -Pacific Association for Machine Translation (AAMT)}
-	\subsection{Association for Machine Translation inte AMericas (AMTA)}
+    Currently, we can speak of three types of automatic translation: the one using linguistic information, the statistical one and the one based on neural networks. To these paradigms we should add the one proposed by researchers at the University of Gothenburg (Sweden) based on the concept of interlingua called Grammatical Framework.
+
+    \subsection{Rule based machine translation}
+    This type of machine translation is not more prevalent in research because it requires a large investment of time and resources. Because developing a single language pair requires source and target language grammars, as well as bilingual dictionaries and transfer rules. In addition, the system cannot translate linguistic structures that are not included in its grammars or transfer rules, nor words or expressions that are not in its dictionaries. 
+
+    Rule-based engines must be practically continuous to ensure that they are able to translate texts from a new domain or grammatical structures that were not foreseen in the first place. 
+
+    Although rule-based machine translation is not predominant in the academic world, its usefulness may go far beyond what we imagine, and it can be useful for language pairs where there is insufficient data to train other engines. Apertium, an open source platform for developing a translation engine, is a great catalyst for the development of minority language engines.
+
+    At the end of 2016, the launch of Kurdish language systems was announced with the aim of assisting Kurdish refugees.
+
+    \subsection{Statistical machine translation}
+	As an alternative to the above process, statistical machine translators can be used which only need data to be trained. Specifically, they need as large a monolingual corpus of the target language as possible and a parallel corpus with translations between source and target language.
+
+    This system consists of three components: 
+    \begin{itemize}
+        \item \textbf{The language model} is in charge of calculating the probability that a sentence in my target language is correct. It is in charge of translation fluency and is trained using a monolingual corpus of the target language that is as complete as possible.
+         \item \textbf{The translation model} is responsible for establishing the correspondence between source and target language and is trained using a corpus aligned to the sentence level. In this phase, the translation probability is estimated from translations appearing in the training corpus.
+         \item \textbf{The decoder} is in charge of searching among all the translations for the most appropriate one in each case.
+    \end{itemize}
+    The quality of these engines depends on many factors: the language pair used, the quality of the training corpus, the field, etc. However, the main reference for these systems is \textbf{Moses}, an open source machine translation system developed thanks to several European research projects with collaborations from all over the world.
+	
+	\subsection{Machine translation based on neural networks}
+	his type of translation began to be heard about 2014 and was developed in the following years, however, in 1997 is the first time that this process was proposed and did not go ahead due to the limitation and the need for powerful computers and processors.
+
+    Nowadays, many research centres have access to supercomputers and this has encouraged their research, as well as the great advances that have been achieved. In 2016, these engines were the winners in the annual academic competitions.
+
+    They work as follows: these networks aim to emulate the way neurons in our brains work, in the same way that our neurons receive information and make connections with each other, the components of language associate with other underlying information to form associations and generate translations. In this way, using machine learning techniques, the computer learns to translate from large amounts of parallel text that also includes all kinds of linguistic and emotional information.
+
+    Thanks to the way it relates the information associated with each word and that of the words in a sentence, the computer is able to learn to translate more efficiently.
+	\begin{figure}
+	    \centering
+	    \includegraphics[width=8cm]{neuronal.PNG}
+	    \caption{Caption}
+	    \label{fig:my_label}
+	\end{figure}
+		\newpage
+	Thus, using artificial neural networks, the system can learn that the terms ''dog'' and ''cat'' are more similar to each other than ''dog'' and ''table''.
+
+    The potential of machine translation based on neural networks is such that engines are already being trained that, in addition to text, incorporate images or even multimedia files.
 	
 	
 	
 	
 	
+
 	\section{Current status}
-	\begin{flushleft}
-	Machine translation research is very active internationally, both in terms of the number of groups involved and the activity in conferences, workshops and associations. The European Union maintains a system of funding for new projects related to language technologies and in particular to machine translation, allowing universities and companies to share knowledge and combine academic and commercial interests.\par
+	Machine translation research is very active internationally, both in terms of the number of groups involved and the activity in conferences, workshops and associations. The IAMT sponsors the , a list of translation software and resources organised by software type and vendor. It also organises a biannual conference on machine translation: the , which brings together the three affiliated associations. Research groups on machine translation are numerous. Sometimes it is a line of research within a research group covering different topics in natural language processing, sometimes machine translation is the main focus of research.
 
-    The International Association for Machine Translation (IAMT), mentioned above, brings together three associations covering the European (European Association for Machine Translation), Asian (Asia-Pacific Association for Machine Translation) and American (Association for Machine Translation in the Americas) continents.\par
+%	Machine translation research is very active internationally, both in terms of the number of groups involved and the activity in conferences, workshops and associations. The European Union maintains a system of funding for new projects related to language technologies and in particular to machine translation, allowing universities and companies to share knowledge and combine academic and commercial interests.\par
 
-    The IAMT sponsors the <<Compedium of Translation Software>>, a list of translation software and resources organised by software type and vendor. It also organises a biannual conference on machine translation: the <<MT Summit>>, which brings together the three affiliated associations. It maintains and makes available on the Internet an electronic repository and an extensive bibliography of articles, books and papers on machine translation and related software.\par
+    %The International Association for Machine Translation (IAMT), mentioned above, brings together three associations covering the European (European Association for Machine Translation), Asian (Asia-Pacific Association for Machine Translation) and American (Association for Machine Translation in the Americas) continents.\par
 
-    Research groups on machine translation are numerous. Sometimes it is a line of research within a research group covering different topics in natural language processing, sometimes machine translation is the main focus of research. Some research groups that stand out for their long-standing research or current projects include:
+    %The IAMT sponsors the <<Compedium of Translation Software>>, a list of translation software and resources organised by software type and vendor. It also organises a biannual conference on machine translation: the <<MT Summit>>, which brings together the three affiliated associations. It maintains and makes available on the Internet an electronic repository and an extensive bibliography of articles, books and papers on machine translation and related software.\par
+
+    %Research groups on machine translation are numerous. Sometimes it is a line of research within a research group covering different topics in natural language processing, sometimes machine translation is the main focus of research. Some research groups that stand out for their long-standing research or current projects include:
    
+   \begin{flushleft}
     \textbf{Pattern Recognition and Human Language Technology (PRHLT) research group, Polytechnic University of Valencia}
-    \begin{flushleft}
+   \end{flushleft}
     It investigates several areas, one of them being automatic translation of both text and spoken speech for restricted domains, based on statistics.the group has extensive experience in automatic speech recognition.the group has developed a large number of projects, a small sample of which are the following:
      \begin{itemize}
-    \item Development of Statistical Techniques for Adaptive and Interactive Learning in Computer-Assisted Translation.
-    \item Translation support based on translation memories.
-    \item \textbf{SISHITRA:} hybrid systems for Valencian-Spanish translation from speech and text.
-    \item \textbf{TRACOM: }Translation and Understanding of Spoken Language through Exemplar-based Learning Techniques.
+         \item Development of Statistical Techniques for Adaptive and Interactive Learning in Computer-Assisted Translation.
+         \item Translation support based on translation memories.
+        \item \textbf{SISHITRA:} hybrid systems for Valencian-Spanish translation from speech and text.
+        \item \textbf{TRACOM: }Translation and Understanding of Spoken Language through Exemplar-based Learning Techniques.
     \end{itemize}
-    \end{flushleft}
+   
     
+   \begin{flushleft}
     \textbf{TALP, Centre for Language and Speech Technologies and Applications of the Polytechnic University of Cataluña}
-    \begin{flushleft}
+   \end{flushleft}
     They are developing their own statistical speech translation system, incorporating linguistic knowledge (morphological, syntactic and semantic) to improve its performance. The working languages are Spanish, Catalan and English, but also Madarin and Arabic. All this, in the framework of national and European projects. They are currently participating in the European project \textbf{MOLTO}, for a tool to translate texts between multiple languages instantly and with high quality, based on interlingua. Projects to be highlighted:
     \begin{itemize}
         \item \textbf{EuroOpenTrad: }open source machine translation for the European integration of the languages of the Spanish State. The translation system is available at http://www.opentrad.org/.
@@ -174,23 +223,40 @@
         \item \textbf{MOLTO: }Multilingual Online Translation, funded by the European Union.
     \end{itemize}
 
-    \end{flushleft}
-    \subsection{Deepl vs Google translate}
-\end{flushleft}
+   
+  
 
-	
+
+
 	\label{sec:examples}
 	\section{Future challenges}
 	\label{sec:examples}
+
+	In the future, machine translation will seek to design a content strategy and make decisions regarding which markets to pursue, making sure to take into account the highest possible efficiency in modern machine translation and related technologies.\par
+
+    In addition, it will seek to use neural networks to not only carry out a literal translation of content but also an interpretation of it, allowing it to not only translate technical texts but also to carry out translations in real time, such as during a conversation if necessary.\par
+
+    On the other hand, partnering with language service providers will help them implement translation to achieve the desired results, as well as improve their content and develop their marketing strategy. The enhancement of these features will allow:
+    \begin{itemize}
+    \item The ability to distribute content to the market more quickly
+    \item Consistency of terminology
+    \item Increased translator productivity
+    \item Lower translation costs
+    \end{itemize}
+    Allowing anyone to have access to any documentation available in libraries and/or on the internet.
+
 	
 	\section{Conclusion}
 	\label{sec:examples}	
-	
+
+	After going through the history of the emergence of machine translation based on artificial intelligence, its main characteristics, its current state and the future challenges to be overcome. It could be concluded that it is a technology that is currently undergoing a slow but constant development of which we are becoming more and more aware, but which society is not.\par 
+    Nowadays, society is not aware of the numerous projects that are being carried out on translation, giving the impression that it is something easy and quick to achieve because they have access to any online translator if they have access to the internet, being on the contrary a very costly and difficult process that takes time and dedication.
+
 	
 	
 	%\section{}{Acknowledgements} \lipsum[6]
 	
-%	\newpage
+	\newpage
     \usepackage{biblatex}
     \section{Bibliography}
     @online{knuthwebsite,
@@ -200,6 +266,8 @@
     keywords  = "latex,knuth"
     
     https://cvc.cervantes.es/lengua/anuario/anuario_10-11/alcina/p05.htm
+    https://www.lionbridge.com/es/blog/translation-localization/the-future-of-language-technology-the-future-of-machine-translation/
+    http://lalinternadeltraductor.org/n16/traduccion-automatica.html
 }
 	
 \end{document}
