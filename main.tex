@@ -74,13 +74,13 @@
 \begin{document}
 \begin{titlepage}
     \centering
-    {\bfseries\LARGE Universidad castilla la mancha\par}
+     {\includegraphics[width=0.2\textwidth]{logo}\par}
+    {\bfseries\LARGE Universidad Castilla La Mancha\par}
     \vspace{1cm}
-    {\scshape\Large Escuela superior informática\par}
+    {\scshape\Large Escuela Superior Informática\par}
     \vspace{2cm}
     {\scshape\Huge Translation \par}
-    \vspace{2cm}
-    {\itshape\Large Intelligent Systems \par}
+    {\itshape\Large Intelligent Systems - Take home assigment \par}
     \includegraphics[width=0.7\textwidth]{INTERPRETACION-O1-800x800.png}
     \vfill
     {\Large Author: \par}
@@ -118,7 +118,7 @@
 
 	
 	
-	\section{First aproaches}
+	\section{First approaches}
 	\label{sec:examples}
     In the early years, around 1949,\textbf{Warren Weaver}  of the Rockefeller Foundation set up a cryptographic and language processing machine that was a precursor to the concept of machine translation. This project can be found in his \textbf{"Memorandum on Translation"}.\newline
     
@@ -139,34 +139,29 @@
 
     \section{Main milestones}
 	\label{sec:examples}
-	Machine translation is a major research topic in the academic world, and several research groups are exploring various strategies, from those based on \textbf{interlanguage} (EU Molto Project) to transfer rule-based systems such as Apertium, to purely \textbf{statistical systems} such as Moses.\newline
+	Machine translation is a major research topic in the academic world, and several research groups are exploring various strategies, from those based on \textbf{inter-language} (EU Molto Project) to transfer rule-based systems such as Apertium, to purely \textbf{statistical systems} such as Moses.\newline
 
     In research, they try to establish links between translators and machine translation. These include those aimed at assessing the quality of machine translation and its impact on the productivity of professional translators.\newline
 
-    Currently, we can speak of three types of automatic translation: the one using \textbf{linguistic information}, \textbf{the statistical} one and the one based on \textbf{neuronal networks}. To these paradigms we should add the one proposed by researchers at the University of Gothenburg (Sweden) based on the concept of interlingua called \textbf{Grammatical Framework}.
-
-
-
+    Currently, we can speak of three types of automatic translation: the one using \textbf{linguistic information}, \textbf{the statistical} one and the one based on \textbf{neuronal networks}. 
 
     \subsection{Rule based machine translation}
     This type of machine translation is not more prevalent in research because it requires a large investment of time and resources. Because developing a single language pair requires source and target language grammars, as well as bilingual dictionaries and transfer rules. In addition, the system cannot translate linguistic structures that are not included in its grammars or transfer rules, nor words or expressions that are not in its dictionaries.\newline
 
     Rule-based engines must be practically continuous to ensure that they are able to translate texts from a new domain or grammatical structures that were not foreseen in the first place. \newline
 
-    Although rule-based machine translation is not predominant in the academic world, its usefulness may go far beyond what we imagine, and it can be useful for language pairs where there is insufficient data to train other engines. Apertium, an open source platform for developing a translation engine, is a great catalyst for the development of minority language engines.\newline
-
-
-
+    Although rule-based machine translation is not predominant in the academic world, its usefulness may go far beyond what we imagine, and it can be useful for language pairs where there is insufficient data to train other engines. Apertium, an open source platform for developing a translation engine, is a great catalyst for the development of minority language engines.
+    
     \subsection{Statistical machine translation}
-	As an alternative to the above process, statistical machine translators can be used which only need data to be trained. Specifically, they need as large a \textbf{monolingual corpus} of the target language as possible and a \textbf{arallel corpus}p with translations between source and target language. This system consists of three components: 
+	As an alternative to the above process, statistical machine translators can be used which only need data to be trained. Specifically, they need as large a \textbf{monolingual corpus} of the target language as possible and a \textbf{parallel corpus} with translations between source and target language. This system consists of three components: 
     \begin{itemize}
         \item \textbf{The language model} is in charge of calculating the probability that a sentence in my target language is correct. It is in charge of translation fluency and is trained using a monolingual corpus of the target language that is as complete as possible.
          \item \textbf{The translation model} is responsible for establishing the correspondence between source and target language and is trained using a corpus aligned to the sentence level. In this phase, the translation probability is estimated from translations appearing in the training corpus.
          \item \textbf{The decoder} is in charge of searching among all the translations for the most appropriate one in each case.
     \end{itemize}
     The quality of these engines depends on many factors: the language pair used, the quality of the training corpus, the field, etc. However, the main reference for these systems is \textbf{Moses}, an open source machine translation system developed thanks to several European research projects with collaborations from all over the world.
-	
-	\subsection{Machine translation based on neural networks}
+    
+    \subsection{Machine translation based on neural networks}
 	
 	This type of translation began to be heard about 2014 and was developed in the following years, however, in 1997 is the first time that this process was proposed but did not go ahead due to the limitation and the need for powerful computers and processors.\newline
 
@@ -176,25 +171,27 @@
         
      
     They work as follows: these networks aim to emulate the way neurons in our brains work, in the same way that our neurons receive information and make connections with each other, the components of language associate with other underlying information to form associations and generate translations. In this way, using machine learning techniques, the computer learns to translate from large amounts of parallel text that also includes all kinds of linguistic and emotional information.\newline
-   \begin{wrapfigure}{r}{0.4\textwidth}
-        \includegraphics[width=0.95\linewidth]{neuronal.jpeg} 
-        \caption{Neuronal network translation}
-        \label{fig:wrapfig}
-    \end{wrapfigure}
-
+     
+    \newline
     Thanks to the way it relates the information associated with each word and that of the words in a sentence, the computer is able to learn to translate more efficiently.\newline
-    
+    \begin{figure}[h]
+        \centering
+        
+        \includegraphics[width=0.4\textwidth]{neuronal.jpeg}
+        \caption{Neuronal network translation from Spanish to English}
+    \end{figure}
+   
 	Thus, using artificial neural networks, the system can learn that the terms ''dog'' and ''cat'' are more similar to each other than ''dog'' and ''table''.\newline
 
 
-
-
     The potential of machine translation based on neural networks is such that engines are already being trained that, in addition to text, incorporate images or even multimedia files.
-\newline
-\newline
-\newline
+    
+    
+    
+    
+
 	\section{Current status}
-	Machine translation research is very active internationally, both in terms of the number of groups involved and the activity in conferences, workshops and associations. The IAMT sponsors  a list of translation software and resources organised by software type and vendor. It also organises a biannual conference on machine translation: which brings together the three affiliated associations. Research groups on machine translation are numerous. Sometimes it is a line of research within a research group covering different topics in natural language processing, sometimes machine translation is the main focus of research.
+	Machine translation research is very active internationally, both in terms of the number of groups involved and the activity in conferences, workshops and associations. The IAMT sponsors  a list of translation software and resources organised by software type and vendor. It also organises a biannual conference on machine translation: which brings together the three affiliated associations. Research groups on machine translation are numerous. Sometimes it is a line of research within a research group covering different topics in natural language processing, sometimes machine translation is the main focus of research.\newline
 	
 	Some of the most significant translation projects are:
 
@@ -213,7 +210,7 @@
    \begin{flushleft}
     \textbf{TALP, Centre for Language and Speech Technologies and Applications of the Polytechnic University of Cataluña}
    \end{flushleft}
-    They are developing their own \textbf{statistical speech translation system}, incorporating linguistic knowledge (morphological, syntactic and semantic) to improve its performance. The working languages are spanish, Catalan and english, but also mandarin and arabic. All this, in the framework of national and European projects. They are currently participating in the European project \textbf{MOLTO}, for a tool to translate texts between multiple languages instantly and with high quality, based on interlingua. Projects to be highlighted:
+    They are developing their own \textbf{statistical speech translation system}, incorporating linguistic knowledge (morphological, syntactic and semantic) to improve its performance. The working languages are Spanish, Catalan and English, but also mandarin and Arabic. All this, in the framework of national and European projects. They are currently participating in the European project \textbf{MOLTO}, for a tool to translate texts between multiple languages instantly and with high quality, based on interlingua. Projects to be highlighted:
     \begin{itemize}
         \item \textbf{EuroOpenTrad: }open source machine translation for the European integration of the languages of the Spanish State. The translation system is available at http://www.opentrad.org/.
         \item\textbf{OpenTrad: }open source machine translation for the languages of the Spanish State.
@@ -254,7 +251,7 @@ In this way, with just a few samples, an entire language could be recreated with
 
 	
 	\newpage
-    \usepackage{biblatex}
+   
 
     \begin{thebibliography}{0}
         \bibitem Yuqo, H. (2018, 13 junio). Nacimiento e historia de la traducción automática. Yuqo. https://www.yuqo.es/nacimiento-e-historia-de-la-traduccion-automatica/
